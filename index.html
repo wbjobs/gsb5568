@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>跨浏览器兼容层演示 · 现代方案 / 降级方案</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="page-header">
+    <h1>跨浏览器兼容层演示</h1>
+    <p class="subtitle">
+      针对动画、存储、通知、地理位置、剪贴板提供现代实现与旧版降级实现；
+      自动检测浏览器支持度并选择方案，支持手动切换、差异对比与切换历史查询。
+    </p>
+    <p id="env-info" class="env-info"></p>
+  </header>
+
+  <main id="app" class="cards"></main>
+
+  <section class="history-panel">
+    <div class="history-head">
+      <h2>切换历史</h2>
+      <button id="clear-history" class="btn btn-ghost">清空历史</button>
+    </div>
+    <ul id="history-list" class="history-list"></ul>
+  </section>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
