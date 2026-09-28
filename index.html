@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>浏览器兼容方案演示台</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>浏览器兼容方案演示台</h1>
+    <p>自动检测浏览器能力，为每个功能选择现代实现或降级实现；支持手动切换，并记录所有降级原因。</p>
+    <button id="reset-btn" type="button">重置全部方案与记录</button>
+  </header>
+
+  <main id="features" class="features"></main>
+
+  <section id="history-panel" class="history-panel">
+    <div class="history-head">
+      <h2>切换与降级记录</h2>
+      <button id="clear-history" type="button">清空记录</button>
+    </div>
+    <ul id="history-list" class="history-list"></ul>
+  </section>
+
+  <script src="js/store.js"></script>
+  <script src="js/features.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
